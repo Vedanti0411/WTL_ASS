@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Employee.xsl"?>
+<!DOCTYPE employees SYSTEM "Emp.dtd">
+
+
+<employees>
+    <data>Employee Details</data>
+
+    <employee>
+        <id>12</id>
+        <name>John Deo</name>
+        <role> HR Manager</role>
+        <dept>HR</dept>
+        <salary>100000</salary>
+    </employee>
+    <employee>
+        <id>13</id>
+        <name>Shrinivansan k.</name>
+        <role>Software Engineer</role>
+        <dept>HR </dept>
+        <salary>85000</salary>
+    </employee>
+    <employee>
+        <id>14</id>
+        <name>Ram Sharma</name>
+        <role>Data Analyst</role>
+        <dept>Data Science</dept>
+        <salary>85000</salary>
+    </employee>
+    <employee>
+        <id>15</id>
+        <name>Sijin Shuro</name>
+        <role>Developer</role>
+        <dept>Development</dept>
+        <salary>80000</salary>
+    </employee>
+    <employee>
+        <id>16</id>
+        <name>Kim Tan</name>
+        <role>Devloper</role>
+        <dept>Development</dept>
+        <salary>75000</salary>
+    </employee>
+</employees>

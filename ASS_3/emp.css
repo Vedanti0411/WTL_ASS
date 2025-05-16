@@ -1,0 +1,94 @@
+/* General Styling */
+employees {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+/* Center the heading */
+data {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+/* Table Container */
+employees, employee, header {
+    display: table;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Rows */
+employee, header {
+    display: table-row;
+}
+
+/* Header Row (ID, Name, Role, etc.) */
+header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Header Cells */
+header > * {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Employee Rows */
+employee {
+    transition: background 0.3s ease-in-out;
+}
+
+/* Employee Cells */
+employee > * {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Alternate Row Coloring */
+employee:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover Effect */
+employee:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    employees, employee, header {
+        width: 100%;
+    }
+    
+    employee > *, header > * {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

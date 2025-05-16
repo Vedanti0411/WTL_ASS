@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="lib.css"?>
+<!DOCTYPE library SYSTEM "lib.dtd">
+
+<library>
+    <book>
+        <id>1</id>
+        <title>Web Develpoment</title>
+        <author>James Gosling</author>
+        <Year>2005</Year>
+	<prize>250Rs.</prize>
+    </book>
+    <book>
+        <id>2</id>
+        <title>Data Structures and Algorithms</title>
+        <author>Robert Lafore</author>
+        <Year>2010</Year>
+	<prize>200Rs.</prize>
+    </book>
+    <book>
+        <id>3</id>
+        <title>Cloud Computing</title>
+        <author>Paulo Coelho</author>
+        <Year>1988</Year>
+        <prize>300Rs.</prize>   
+</book>
+</library>

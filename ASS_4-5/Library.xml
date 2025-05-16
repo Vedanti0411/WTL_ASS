@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Library.css"?>
+<!DOCTYPE library SYSTEM "Library.dtd">
+
+<library>
+    <book>
+        <title>Midnight's Children</title>
+        <author>Salman Rushdie</author>
+    </book>
+    <book>
+        <title>One Hundred Shades of White</title>
+        <author>Preeti Shenoy</author>
+    </book>
+    <book>
+        <title>The White Tiger</title>
+        <author>Aravind Adiga</author>
+    </book>
+    <book>
+        <title>Train to Pakistan</title>
+        <author>Khushwant Singh</author>
+    </book>
+    <book>
+        <title>Shiva Trilogy</title>
+        <author>Amish Tripathi</author>
+    </book>
+    <book>
+        <title>In Custody</title>
+        <author>R. K. Narayan</author>
+    </book>
+</library>

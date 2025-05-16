@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="events.xsl"?>
+<events>
+    <event>
+        <name>Wedding Decoration</name>
+        <date>2025-04-15</date>
+        <location>Mumbai</location>
+    </event>
+    <event>
+        <name>Birthday Party</name>
+        <date>2025-05-10</date>
+        <location>Pune</location>
+    </event>
+</events>

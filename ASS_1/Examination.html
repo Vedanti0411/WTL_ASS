@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Form</title>
+</head>
+<body>
+
+    <h2>Examination Registration Form</h2>
+    <form>
+        <label for="name">UserName:</label>
+        <input type="text" id="name" name="name" required placeholder="Username"><br><br>
+
+        <label for="name">Password:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your Password"><br><br>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        
+
+        <input type="date" id="bday" name="bday" value="2025-01-29" min="2000-01-01" max="2020-01-01" />
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="123-456-7890"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="exam">Select Exam Type:</label>
+        <select id="exam" name="exam">
+            <option value="">Choose Exam</option>
+            <option value="math">Backlog 2024-25</option>
+            <option value="science">Regular 2024-25</option>
+        </select>
+        <br><br>
+
+        <label>Preferred Mode of Exam:</label><br>
+        <input type="radio" id="online" name="mode" value="online">
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode" value="offline">
+        <label for="offline">Offline</label>
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your full address"></textarea>
+        <br><br>
+
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>

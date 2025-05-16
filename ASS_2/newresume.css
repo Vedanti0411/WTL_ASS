@@ -1,0 +1,140 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 10px;
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #007acc;
+    position: relative;
+}
+header h1::after {
+    content: ' - Resume';
+    font-size: 0.5em;
+    color: #007acc;
+    position: absolute;
+    top: 0;
+    right: -80px;
+}
+header p {
+    margin: 5px 0;
+}
+header img {
+    border-radius: 40%;
+    width: 125px;
+    height: 150px;
+    transition: transform 0.3s;
+}
+header img:hover {
+    transform: scale(1.1);
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 1.8em;
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+h2::before {
+    content: '▼ ';
+    color: #007acc;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007acc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    position: relative;
+}
+th:hover {
+    background-color: #e0e0e0;
+}
+th::after {
+    content: 'Ξ';
+    font-size: 0.8em;
+    color: #007acc;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Styling for anchor tags */
+a {
+    text-decoration: none;
+    color: #007acc;
+    position: relative;
+    padding: 2px 0;
+}
+
+/* Pseudo-classes for anchor tags */
+a:hover {
+    color: #005f99;
+}
+a:focus {
+    outline: 2px solid #010304;
+    outline-offset: 2px;
+}
+a:active {
+    color: #05253b;
+}
+
+/* Pseudo-elements for anchor tags */
+a::before {
+    
+    color: #005f99;
+    position: absolute;
+    left: -20px;
+}
+a::after {
+    content: ' ⤴';
+    color: #005f99;
+    font-size: 0.8em;
+    position: absolute;
+    right: -10px;
+}

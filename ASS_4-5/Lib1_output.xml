@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<library_catalog>
+  <books category="Science">
+    <book_entry>
+      <book_title>Physics for Beginners</book_title>
+      <author_name>Dr. Albert</author_name>
+      <publication_year>2015</publication_year>
+    </book_entry>
+    <book_entry>
+      <book_title>Chemistry Basics</book_title>
+      <author_name>Marie Curie</author_name>
+      <publication_year>2018</publication_year>
+    </book_entry>
+  </books>
+  <books category="Technology">
+    <book_entry>
+      <book_title>Artificial Intelligence</book_title>
+      <author_name>John McCarthy</author_name>
+      <publication_year>2020</publication_year>
+    </book_entry>
+  </books>
+</library_catalog>

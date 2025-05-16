@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Student.xsl"?>
+<!DOCTYPE students SYSTEM "Student.dtd">
+<students>
+    <student>
+        <rollno>101</rollno>
+        <name>
+            <firstname>John</firstname>
+            <middlename>Michael</middlename>
+            <lastname>Doe</lastname>
+        </name>
+        <phone>1234567890</phone>
+    </student>
+    <student>
+        <rollno>102</rollno>
+        <name>
+            <firstname>Jane</firstname>
+            <middlename>Elizabeth</middlename>
+            <lastname>Smith</lastname>
+        </name>
+        <phone>9876543210</phone>
+    </student>
+    <student>
+        <rollno>103</rollno>
+        <name>
+            <firstname>Robert</firstname>
+            <middlename>James</middlename>
+            <lastname>Williams</lastname>
+        </name>
+        <phone>5678901234</phone>
+    </student>
+    <student>
+        <rollno>104</rollno>
+        <name>
+            <firstname>Emily</firstname>
+            <middlename>Anne</middlename>
+            <lastname>Johnson</lastname>
+        </name>
+        <phone>3456789012</phone>
+    </student>
+</students>

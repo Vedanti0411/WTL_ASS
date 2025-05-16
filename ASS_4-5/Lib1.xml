@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Lib1.xsl"?>
+<library>
+    <category name="Science">
+        <book>
+            <title>Physics for Beginners</title>
+            <author>Dr. Albert</author>
+            <year>2015</year>
+        </book>
+        <book>
+            <title>Chemistry Basics</title>
+            <author>Marie Curie</author>
+            <year>2018</year>
+        </book>
+    </category>
+    <category name="Technology">
+        <book>
+            <title>Artificial Intelligence</title>
+            <author>John McCarthy</author>
+            <year>2020</year>
+        </book>
+    </category>
+</library>

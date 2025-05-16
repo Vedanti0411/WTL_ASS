@@ -1,0 +1,88 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Student Information</title>
+    <style>
+                    /* Removed @import, directly using font-family */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: Arial, sans-serif; /* Replaced Poppins */
+                    }
+                    
+                    body {
+                        background: linear-gradient(to right, #141e30, #243b55);
+                        text-align: center;
+                        padding: 20px;
+                    }
+
+                    h2 {
+                        color: #fff;
+                        margin-bottom: 20px;
+                        font-size: 28px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 20px;
+                    }
+
+                    .card {
+                        background: #2c3e50;
+                        color: white;
+                        padding: 20px;
+                        width: 300px;
+                        border-radius: 15px;
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 
+                                    -5px -5px 10px rgba(255, 255, 255, 0.1);
+                        transition: transform 0.3s ease;
+                    }
+
+                    .card:hover {
+                        transform: scale(1.05);
+                    }
+
+                    .card h3 {
+                        color: #4caf50;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+
+                    .card p {
+                        margin: 5px 0;
+                        font-size: 16px;
+                        color: #ddd;
+                    }
+                </style>
+  </head>
+  <body>
+    <h2>Student Information</h2>
+    <div class="container">
+      <div class="card">
+        <h3>Roll No: 101</h3>
+        <p><strong>Name:</strong>JohnMichaelDoe</p>
+        <p><strong>Phone:</strong>1234567890</p>
+      </div>
+      <div class="card">
+        <h3>Roll No: 102</h3>
+        <p><strong>Name:</strong>JaneElizabethSmith</p>
+        <p><strong>Phone:</strong>9876543210</p>
+      </div>
+      <div class="card">
+        <h3>Roll No: 103</h3>
+        <p><strong>Name:</strong>RobertJamesWilliams</p>
+        <p><strong>Phone:</strong>5678901234</p>
+      </div>
+      <div class="card">
+        <h3>Roll No: 104</h3>
+        <p><strong>Name:</strong>EmilyAnneJohnson</p>
+        <p><strong>Phone:</strong>3456789012</p>
+      </div>
+    </div>
+  </body>
+</html>

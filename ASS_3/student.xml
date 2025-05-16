@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="student.css"?>
+<!DOCTYPE employees SYSTEM "student.dtd">
+
+<students>
+    <student>
+        <id>1</id>
+        <name>Pooja Ramesh Sakhare</name>
+        <age>21</age>
+        <dept>CSE</dept>
+    </student>
+    <student>
+        <id>2</id>
+        <name>Sanika Sattapa Chougale</name>
+        <age>22</age>
+        <dept>Mech</dept>
+    </student>
+    <student>
+        <id>3</id>
+        <name>Radhika Pandurang Patil</name>
+        <age>20</age>
+        <dept>AIML</dept>
+    </student>
+</students>
