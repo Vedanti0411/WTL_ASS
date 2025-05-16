@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 25px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #error {
+      color: rgb(226, 66, 54);
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h3>Registration Form</h3>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone">
+
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <input type="submit" value="Submit">
+      <p id="error"></p>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value;
+      let phone = document.getElementById("phone").value.trim();
+      let gender = document.getElementById("gender").value;
+      let error = document.getElementById("error");
+
+      // Regex patterns
+      let namePattern = /^[A-Za-z\s]+$/;
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let passwordPattern = /^.{6,}$/;
+      let phonePattern = /^[0-9]{10}$/;
+      let genderPattern = /^(Male|Female)$/;
+
+      if (!name || !email || !password || !phone || !gender) {
+        error.textContent = "All fields are required.";
+        return false;
+      }
+
+      if (!namePattern.test(name)) {
+        error.textContent = "Name can only contain letters and spaces.";
+        return false;
+      }
+
+      if (!emailPattern.test(email)) {
+        error.textContent = "Invalid email format.";
+        return false;
+      }
+
+      if (!passwordPattern.test(password)) {
+        error.textContent = "Password must be at least 6 characters.";
+        return false;
+      }
+
+      if (!phonePattern.test(phone)) {
+        error.textContent = "Phone number must be 10 digits.";
+        return false;
+      }
+
+      if (!genderPattern.test(gender)) {
+        error.textContent = "Please select a valid gender.";
+        return false;
+      }
+
+      error.textContent = "";
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
